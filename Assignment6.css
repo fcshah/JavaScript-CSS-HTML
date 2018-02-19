@@ -1,0 +1,168 @@
+body{
+    background: rgb(173, 173, 173);
+   
+}
+
+
+.mainForm{
+    width : 900px;
+    background: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+    padding-top: 1px;
+    height: 1600px;
+}
+
+h1{
+    background: red;
+    color:white;
+    height: 90px;
+    border : 1px solid black;
+    margin-top: inherit;
+    margin-bottom: 0;
+    padding-top: 20px;
+    padding-left: 30px;
+    font-size: 80px;
+    font-family:  Segoe, sans-serif;
+
+}
+
+
+
+h2 {
+    height: 40px;
+    font-family: "Times New Roman";
+    font-size: 30px;
+    padding-left:30px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+   
+    color:#020000;
+}
+
+h3 {
+    margin-top: 30px;
+    color: red;
+    padding-left:30px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+}
+
+
+.FormCSS{
+    background: rgb(255, 254, 254);
+    
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-left: 0;
+    padding-right: 0;
+
+}
+
+
+h4{
+    
+    background: grey;
+    margin: 0;
+    font-size: 25px;
+    padding-left: 30px;
+}
+
+form label {
+    display: inline-block;
+    width: 40%;
+    text-align: right;
+    font-size: 18px;
+    margin: 0;
+    padding: 10px;
+    vertical-align: top;
+}
+
+form input {
+     border : 1px solid black;
+     width: 30%;
+     padding: 5px;
+     margin: 5px;
+}
+
+form textarea {
+    border : 1px solid black;
+    width: 30%;
+    height: 50px;
+    vertical-align: top;
+    padding: 5px;
+     margin: 5px;
+}
+
+form select {
+    width: 31.3%;
+    padding: 5px;
+     margin: 5px;
+}
+
+li{
+    display: block;
+    list-style-type: none;
+}
+
+#estatus {
+    width: 31%;
+    height: 100px;
+    margin-left: 43%;
+    border-radius: 25px;
+    padding: 0 0;
+    
+}
+#estatus input {
+    width: 10px;
+    vertical-align: middle;
+}
+#estatus ul{
+    padding-left: 0px;
+    margin: 0px;
+}
+
+#Buttons{
+    background:white;
+    padding-top: 50px;
+    height: 100px;
+    padding-left: 40%;  
+}
+
+#Buttons input, button{
+    background: red;
+    color: white;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    border-radius: 7px;
+
+
+}
+
+ .required:after { 
+    color: red;
+    content:" *";
+}
+
+.error{
+    width: 31%;
+    color:red;
+    box-sizing: border-box;
+    margin-left: 44%;
+    word-break: keep-all;
+}
+
+.statEror {
+    display: inline-block;
+    color:rgb(179, 255, 0);
+}
+
+.fieldStatusNoError {
+    display: inline-block;
+    color:rgb(10, 75, 216);
+}
+.fieldClass{
+    display: inline-block;
+}

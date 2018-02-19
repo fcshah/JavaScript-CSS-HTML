@@ -1,0 +1,162 @@
+﻿<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Sign Up</title>
+        <link rel="stylesheet" type="text/css" href="css/assignment6.css">
+        <script src="js/assignment6.js"></script>
+        
+    </head>
+    <body>
+        <div class = "mainForm">
+       <h1>JobSearch<span>.com</span></h1>
+        <h2>Create Your Account</h2>
+        
+        <h3>* Required information</h3>
+        
+        <form id = "SignUp" action="https://httpbin.org/post" method="post" onchange="return FormValidation();" onsubmit="return FormValidation();">
+        <div class = "FormCSS">
+           
+          <h4>Basic Information</h4>
+           <label for="email" class="required">Email</label>
+           <input type="email" name="email" id="email" autofocus required><br>
+           <label for="password" class="required">Password</label>
+           <input type="password" name="password" id="password" required><div class="fieldClass" id = "PassCheking"></div><br>
+          
+           <div id ="passError" class = "error"></div>
+           <label for="repassword" class="required">Retype Password</label>
+           <input type="password" name="repassword" id ="repassword" required><div class="fieldClass" id = "rePassCheking"></div><br>
+           
+           <div id ="passErrorRe" class = "error"></div>
+           <label for="fname" class="required">First Name</label>
+           <input type="text" name="fname" id="fname" required><div class="fieldClass" id = "fNameCheking"></div><br>
+           
+           <div id = "fNameError" class = "error"></div>
+           <label for="lname" class="required">Last Name</label>
+           <input type="text" name="lname" id="lname" required><div class="fieldClass" id = "LNameCheking"></div><br>
+           
+           <div id = "lNameError" class = "error"></div>
+            <label for="phone" class="required">Telephone</label>
+            <input type="tel" name="phone" id="phone" placeholder="999-999-9999" required><div class = "statEror" id="telChecked"></div><br>
+            
+            
+            
+            <div id = "pError" class ="error"></div>         
+            <label for="address" class="required">Address</label>
+            <input type="text" name="address" id="address" required><br>
+            
+          
+             <label for="city" class="required">City</label>
+             <input type="text" name="city" id ="city" required><br>
+             
+             <label class="required" for="province">Province</label>
+             <select name="province" id="province" size=1>
+                 <optgroup label="Provinces">
+                    <option value="AB" selected>Alberta</option>
+                    <option value="BC">British Columbia</option>
+                    <option value="MB">Manitoba</option>
+                    <option value="NB">New Brunswick</option>
+                    <option value="NL">Newfoundland and Labrador</option>
+                    <option value="NS">Nova Scotia</option>
+                    <option value="ON">Toronto</option>
+                    <option value="PE">Prince Edward Island</option>
+                    <option value="QC">Quebec</option>
+                    <option value="SK">Saskatchewan</option>
+                 </optgroup>
+                 <optgroup label="Territories">
+                  <option value="NT">Northwest Territories</option>
+                  <option value="NU">Nunavut</option>
+                  <option value="YT">Yukon</option>
+                 </optgroup>
+            </select> <br>
+           
+             <label for="countrySelect" class="required">Country</label>
+              <input list="country" name="countrySelect" id ="countrySelect"><br>
+                  <datalist id="country">
+                    <option value="Canada">
+                    <option value="The United States">
+                    <option value="India">
+                    <option value="China">
+                    <option value="Switzerland">
+                  </datalist>
+             
+    <h4>Education</h4>
+          
+           
+           <label for="school" class="required">School</label>
+           <input type="text" name="school" id="school" required><br>
+           
+        
+           <label for="program" class="required">Program</label>
+           <input type="text" name="program" id="program" required><br>
+           
+          
+           <label for="edlevel" class="required">Education Level</label>
+           <select name="edlevel" id="edlevel" size=1 required>
+                <option value="" selected>-select-</option>
+                 <optgroup label="Education">
+                  <option value="TD">Technical Diploma</option>
+                  <option value="CD">College Diploma</option>
+                  <option value="BD">Bachelor's Degree</option>
+                  <option value="MD">Master's Degree</option>
+                  <option value="OO">Others</option>
+                 </optgroup>
+            </select> <br> 
+
+      
+           <fieldset id = "estatus">
+               <legend>Education Status</legend>
+               <ul>
+                 <li><input type="radio" name="estatus" id="estatus_1" value="Graduated">Graduated</li>
+                 <li><input type="radio" name="estatus" id="estatus_2" value="Current enrolled">Current enrolled</li>
+                 <li><input type="radio" name="estatus" id="estatus_3" value="Did not graduate">Did not graduate</li> 
+               </ul>
+               
+           </fieldset> <br>
+           <div id ="estatusError" class = "error"></div>
+           
+           
+           <label for="gdate" class="required">Graduation Date: </label>
+           <input type="text" name="gdate" id="gdate" required><br>
+           
+           
+           <h4>Work Experience</h4>
+           
+            
+            <label for="employer">Employer: </label>
+            <input type="text" name="employer" id = "employer"><br>
+
+            
+            <label for="jtitle" >Job Title: </label>
+            <input type="text" name="jtitle" id ="jtitle"><br>
+
+            
+            <label for="jduty" class="spacer">Job Duty: </label>
+            <textarea name = "jduty" id ="jduty"></textarea><br>
+
+           
+            <label for="address">Worked Year: </label>
+            <input type="number" name="wyear" id ="wyear" min="1" max="20"><br> 
+           
+
+           <h4>Attachments</h4>
+
+           
+           <label for="attachment">Attachments: </label>
+           <input type="file" name="attachment" id="attachment" ><br>
+        </div>
+
+
+        
+           <div id = "Buttons">
+           <input type="reset" value="Reset" onclick="clearEverything();">
+           <input type="submit" value="Submit">
+           
+           </div>
+            
+        </form>
+        </div>
+        
+    </body>    
+    
+</html>
